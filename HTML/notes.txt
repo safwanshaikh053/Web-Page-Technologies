@@ -1,0 +1,264 @@
+What is HTML?
+- it is used to create structure of website or web application.
+-it is use to display data to user on browser
+-it stands for hyper text markup language
+-latest version of HTML is HTML5.
+
+-it is tag based language.
+<tag>
+-in html there are two types of tag.
+1. Paired tags.  <startTag> </end tag>
+2. Unpaired tag.  <Single>
+
+
+<!DOCTYPE html>
+it tells search engine.
+this is html type of document belonging to version 5.
+
+-in html file html is root tag.
+-in html there are two part:
+1.Head: it contain external and Meta data in it.
+2.Body:it is used to display data or information on browser.
+
+
+commenting in html
+<!--message-->
+ shortcut ctrl+/
+
+ <br> tag used to break line.
+ <hr> tag is used to make a horizontal line.
+
+ LIST:
+ collection of items in a particular order
+ types:
+ 1.Ordered list <ol>
+ 2.Unordered list<ul>
+ 3.Description list<dl>:
+                        dl-Description list
+                        dt-Description term
+                        dd define Description
+
+what is Element in HTML
+<startTag attribute="value"> content or information</endingTag>
+
+attribute:
+it provides Additional information about tag.
+it always write in starting tag.
+it write in key and value pair.
+
+In html we have 2 types of Element:
+1. Block Element: -the Element which takes 100% width of the screen.
+                   -it always start with new line.
+                   eg: h1-h6,p,div,all list, table, form.
+2.Inline Element:the Element which takes required width of it.
+                 eg: b,i,u, a, img;
+
+iframe: 
+
+Q--what is dfference between html and html5?? || what are the features of html5??
+-symentic element like header, footer, nav, address, aside, section, etc.. got introduced
+-new tag, new attributes, new input type
+-multimedia element introduced, use of audio and video tag.
+-API introduced : geolocation, drag and drop, webworker, web storage, server sent events (sse), 
+
+
+web storage: it is used to store user data on the browser.
+            there are 2 types of webstorage: local storage and session storage.
+            local storage stores user data permanently.
+            session storage stores data temporarily just for current session.
+webworker: it is small javascript code which execute at the backend of the browser without affecting current execution
+
+
+server sent event: it allows us to get automatic update from server.
+
+b tag makes the font bold but strong tag makes the font bold and important too for search engine.
+i tag makes the font italic but emphasis tag makes the font italic and important too for search engine.
+u tag makes the font underlined but ins tag makes the font underlined and important too for search engine.
+
+
+to submit form's data there are 2 method:
+1.get method- it will show data in browser r=url.
+              we can not submit confidential Data.
+              there is character limitation that 1024.
+2. post method - it will never display user info. on browser url
+                  we can use it to submit confidential data.
+
+
+What are new tags in html5
+- strong, em, ins,abbr, address, footer, header ... 
+
+What are new attribute in html 5
+  maxlength, minlength, pattern, min, max, accept....
+
+
+What are newinput type in html 5
+  email, password,tell, date, datetime, color, week ....
+
+
+   ==========CSS===========
+
+   CSS is used to design and make web application attractive and responsive.
+   it's latest version is version-3.
+   it stands for cascading style sheet.
+
+   What are types of CSS /  How to use CSS
+   --> there are 3 ways to use CSS:
+   1.Inline CSS: in starting tag we use style attribute with property and values.
+   2.Internal CSS: in html file we use style tag and in that we write CSS.
+   3.External CSS:in this we create a seperate CSS file and that CSS file we import in htmlfile head part by using link tag.
+
+
+syntaxL selector{
+    property: value
+    property: value
+    property: value
+}
+
+important=         ==== Selector in css:====
+
+   selecting an element in css:
+
+1.element name selector
+2.group name selector
+3.id selector(#)
+4.class selector(.)
+5. universal selector(*)
+
+
+======Border=======
+  A line drawn around the element
+
+  =====BOX MODEL======
+
+  1. content: it can  be any text ir message.
+  2.padding: it is use to clear area between text and border.
+  3.border: a line drawn around an element.
+  4.margin: it is used to clear area outside element  border.
+
+
+display:inline;
+  it is use to convert block element into inline element.
+
+display block; 
+  it is use to convert inline element into block element.
+
+display inline block;
+  if you want to apply width and height to an  inline element.
+
+======box - sizing=======
+
+  box-sizing property;
+    it includes padding and border size in its actual width.
+
+
+              **Very IMP
+===============Media Query================
+  it apply different stylerule to an element according to different screen width.
+  it is used to make website responsive.
+ 
+   syntax:
+   
+   media-query screen and (break pouint){
+
+    //css code
+   
+   }
+
+
+screen width >=1200px then xl
+screen width >=992px then large
+screen width >=768px then medium
+screen width >=576px then small
+screen width < 576px then extra small
+
+
+
+=======Very IMP========
+========Flex========
+display:flex;
+it is use to adjust website element according to different screen width.
+this property we always apply to parent element.
+
+
+
+  
+=========string==========
+
+-it is collection of characters
+-in string each character has index.
+-string start from 0.
+-string written in '' or "" .
+
+*3 string method return poartial part of string by passing its index number.
+        1. indexOf(startIndex, endIndex):    -  it return index number of searching string.
+                                              - if searching string not found then it return -1 as result.
+                                              - searches from left to right.
+
+        2.lastIndexOf();  -  it return index number of searching string.
+                          - if searching string not found then it return -1 as result.
+                          - searches from right to left.
+
+        3.serach(): -  it return index number of searching string.
+                    - if searching string not found then it return -1 as result
+                    - searches from left to right.
+                    - it is faster than index of method.
+
+*3 method which return partial part of searching string
+        4.slice(startIndex, endIndex):  -it will return part of searching string.
+                                         - if we pass +ve index then it search from left to right.
+                                         - if we pass +ve index then it search from right to left. 
+
+        5.substring(startIndex, endIndex):  - it will return part of sring from big string
+                                            - if we pass +ve index then it search from left to right
+
+        6.subStr(startIndex, totalnoOf characters):  - it will return part of sring from big string
+                                                      - if we pass +ve index then it search from left to right
+  
+
+**new==> it is used to allocate memory.
+DATE and its METHODS 
+
+   -if you want to get date and time in javascript for it first you have to create object of date class.
+
+
+
+   learn-->onsubmit event
+   learn-->onblur event
+
+
+   Note: javascript execute asynchronously by default.
+
+
+   =====Callback Function======
+
+   -passing an function name as argument inside another function is called callback Function.
+     
+
+     -trim(): it removes spaces between strings.
+     -trimStart():  removes  spaces from start of string.
+     -trimEnd(): removes  spaces from end of string.
+
+
+     javascript introduced in 1995.
+
+     ES5-ECMA Script 5 -2009
+     ES6-ECMA Script 6 -2015
+
+
+     forEach():   -it call another method for each array.
+                  - it do not return any values, it is used to iterate array value only
+
+    
+    map():    always returns a new array with the results of the callback function. The original array remains unchanged.
+
+
+    filter(): it call another once for each array and return new array of those who satisfy given condition.
+
+    every():  it call another once for each array and return true value if all array element satisfy given condition.
+
+    some():   it call another once for each array and return true value if some array element satisfy given condition.
+
+    reduce/reduceRight(): it return array values as a single result, it takes 2 parameter--previousNum, nextNum.
+    
+
+    

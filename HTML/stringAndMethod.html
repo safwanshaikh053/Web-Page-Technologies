@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // refer to notes in javascript folder 
+        let msg= `Welcome to AIT,Good to Luck friends.`;
+        document.write(msg,'<br>');
+        document.write(msg.length,'<br>');
+        document.write(msg.toUpperCase(),'<br>');
+        document.write(msg.toLowerCase(),'<br>');
+
+        document.write(msg.replace("Good","Changed"),'<br>');
+        document.write(msg.replace(/welcome/ig,"Changed"),'<br>');
+
+
+        document.write(msg.charAt(0),'<br>');       
+        document.write(msg.charCodeAt(0),'<br>')
+
+        document.write(msg.indexOf(`to`),'<br>');
+        document.write(msg.indexOf(`to`,10),'<br>');
+        document.write(msg.indexOf(`safwan`),'<br>');
+
+        document.write(msg.lastIndexOf(`Luck`),'<br>');
+        document.write(msg.lastIndexOf(`Luck`,10),'<br>');
+        document.write(msg.lastIndexOf(`Arsalan`),'<br>');
+    
+        //slice
+         document.write(msg.slice(20),'<br>');
+         document.write(msg.slice(20,30),'<br>');
+         document.write(msg.slice(-20),'<br>');
+         document.write(msg.slice(-20,-3),'<br>');
+
+        //substring
+         document.write(msg.substring(14),'<br>');
+         document.write(msg.substring(14,30),'<br>');
+
+         //subStr(startIndex, totalnoOf characters)
+         document.write(msg.subStr(14),'<br>');
+         document.write(msg.subStr(14,18),'<br>');
+
+         
+
+
+    </script>
+</body>
+</html>

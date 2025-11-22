@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>User Form</h2>
+    <form action="">
+        <label for="txtName">Enter Your Full Name:</label>
+        <input type="text" name="fname" id="txtName" placeholder="Enter Your Name" minlength="3" maxlength="20"
+            pattern="[^a-zA-z]{3,20}" required>
+        <br><br>
+        <label for="txtpass">Enter your password</label>
+        <input type="password" name="upass" id="txtpass" required>
+        <br><br>
+        <label for="">Enter your Email:</label>
+        <input type="email" name="uemail" required>
+        <br><br>
+        <label for="">Enter your contact details:</label>
+        <input type="tel" name="ucontact" pattern="^[789]\d{11}$" required>
+        <br> <br>
+        <label for="">Select DOB</label>
+        <input type="date" name="udob" required>
+        <br><br>
+        <label for="">Select Your Gender:</label>
+        <input type="radio" name="Gender" value="male">Male
+        <input type="radio" name="Gender" value="female">Female
+        <input type="radio" name="Gender" value="Trans Gender">Trans Gender
+        <br><br>
+        <label for="">Select your Qualification:</label>
+        <input type="checkbox" name="edu" value="ssc">SSC
+        <input type="checkbox" name="edu" value="hsc">HSC
+        <input type="checkbox" name="edu" value="ug">UG
+        <input type="checkbox" name="edu" value="pg">PG
+        <br><br>
+
+        <label for="">Select Your Couse:</label>
+        <select name="ucourses" multiple required>
+            <option value="">Select Your Couese</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+            <option value="react">React</option>
+        </select> <br><br>
+        <label for="">Course Fee</label>
+        <input type="text" name="ufees" value="10000" readonly disabled required>
+        <br><br>
+        <label for="">Upload Your profile</label>
+        <input type="file" name="uprofile" accept=".png,pdf" required>
+        <br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+
+</html>
