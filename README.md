@@ -9,7 +9,7 @@ This repository is designed to help beginners and aspiring developers understand
 
 ### 🧱 Front-End Foundations
 - **HTML5** — Structure and semantics of modern web pages  
-- **CSS3** — Styling, layouts, flexbox, grid, media queries  
+- **CSS5** — Styling, layouts, flexbox, grid, media queries  
 - **Bootstrap** — Responsive and mobile-first design framework  
 
 ### ⚙️ Dynamic Behavior
@@ -24,7 +24,7 @@ This repository is designed to help beginners and aspiring developers understand
 ### 🌐 Integration Topics
 - **AJAX & Fetch API** — Asynchronous communication between client and server  
 - **JSON Handling** — Parsing and using structured data formats  
-- **Git & GitHub** — Version control, collaboration, and open-source contribution  
+ 
 
 ---
 
@@ -48,7 +48,7 @@ This repository includes:
 
 ## 🤝 Contribute & Learn Together
 If you find this helpful, feel free to ⭐ **Star** the repo and share it with your network!  
-Suggestions, improvements, and pull requests are always welcome.
+Suggestions and improvements are always welcome.
 
 ---
 
