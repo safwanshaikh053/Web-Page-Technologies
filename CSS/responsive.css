@@ -1,0 +1,28 @@
+.cls1{
+    border: 2px solid red;
+    width: 20%;
+    box-sizing: border-box;
+    float: left;
+}
+@media screen and (max-width:992px){
+    .cls1{
+    width: 25%; 
+ }
+}
+@media screen and (max-width:768px){
+    .cls1{
+    width: 33.33%;
+    
+ }
+}
+@media screen and (max-width:576px){
+    .cls1{
+    width: 50%;
+   
+ }
+}
+@media screen and (max-width:450px){
+    .cls1{
+    width: 100%;
+ }
+}
