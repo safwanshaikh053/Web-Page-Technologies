@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<style>
+    .main-div {
+        background-color: aqua;
+        display: flex;
+        padding: 20px;
+        border-radius: 15px;
+        height: 500px;
+        width: 1000px;
+    }
+    .second-main-div{
+        background-color: aqua;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .textinputdiv {
+        height: 100px;
+        width: 550px;
+        color: blue;
+        border-radius: 15px;
+        display: flex;
+    }
+
+    .txtarea1 {
+        height: 300px;
+        width: 150px;
+        color: blue;
+        border-radius: 15px;
+        margin: 20px;
+    }
+
+    .txtarea2 {
+        height: 100px;
+        width: 220px;
+        background-color: bisque;
+        color: blue;
+        border-radius: 15px;
+        margin: 50px;
+    }
+
+    .container {
+        background-color: chartreuse;
+        display: flex;
+    }
+    .buttondiv {
+        height: 50px;
+        width: 220px;
+        background-color: bisque;
+        color: blue;
+        border-radius: 15px;
+        margin: 50px;
+    }
+</style>
+
+<body>
+
+    <div class="main-div">
+        <div>
+            <textarea name="text" id="t1" class="txtarea1" placeholder="Enter text paragraph"></textarea>
+        </div>
+        <div class="second-main-div">
+            <div class="textinputdiv">
+                <div>
+                    <textarea name="to replace" id="t2" class="txtarea2">Enter word you want to replace</textarea>
+                </div>
+                <div>
+                    <textarea name="to insert" id="t3" class="txtarea2">Enter word you want</textarea>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button type="button" class="buttondiv" id="b1" onclick="replaceOne()">Replace Single</button>
+                <button type="button" class="buttondiv" id="b2" onclick="replaceAtAll()">Replace All</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // let text1 = document.getElementById("t1").value;
+        // let text2 = document.getElementById("t2").value;
+        // let text3 = document.getElementById("t3").value;
+        let text1 = document.getElementById("t1");
+        let text2 = document.getElementById("t2");
+        let text3 = document.getElementById("t3");
+        let buttonOne = document.getElementById("b1");
+        let buttonAll = document.getElementById("b2");        
+        function replaceOne(){
+            console.log(text1.value);
+            console.log(text2.value);
+            console.log(text3.value);
+            let replaced_string = text1.value.replace(text2.value.toString(), text3.value.toString());
+            text1.value = replaced_string;
+        }
+        function replaceAtAll(){
+            console.log(text1.value);
+            console.log(text2.value);
+            console.log(text3.value);
+            let replaced_string = text1.value.replaceAll(text2.value.toString(), text3.value.toString());
+            text1.value = replaced_string;
+        } 
+    </script>
+</body>
+
+</html>

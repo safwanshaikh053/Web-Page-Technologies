@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./onsubmit.js"></script>
+    <title>Task 2</title>
+</head>
+<body>
+    
+    <form name="myform" onsubmit="return checkData()">
+        <label for="">Enter Your Password:</label>
+        <input type="password" name="fpass" id="pass1"> <br> <br>
+
+
+        <label for="">Enter Your Email:</label>
+        <input type="email" name="fmail" id="mail"> <br> <br>
+
+        <label for="">Select Your Gender:</label>
+        <input type="radio" name="gen" value="Male">Male
+        <input type="radio" name="gen" value="Female">Female
+        <input type="radio" name="gen" value="Other">Other 
+        <br> <br> 
+
+       
+        <button type="submit">Submit</button>
+    </form>
+
+<script>
+    function checkData() {
+    let upass = document.myform.fpass.value.trim();
+    let uemail = document.myform.fmail.value.trim();
+    let ugen = document.myform.gen;
+   
+    // Password regex (at least 1 lowercase, 1 uppercase, 1 number, 1 special char, 8+ chars)
+    let regpass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&\-+=()!? "]).{8,128}$/;
+
+    // Simple email regex
+    let regmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (upass === '') {
+        window.alert("Password is required");
+        return false;
+    }
+    if (!regpass.test(upass)) {
+        window.alert("Password must contain at least 1 uppercase, 1 lowercase, 1 number, 1 special character, and be 8+ characters long.");
+        return false;
+    }
+
+    if (uemail === '') {
+        window.alert("Email is required");
+        return false;
+    }
+    if (!regmail.test(uemail)) {
+        window.alert("Enter a valid email address");
+        return false;
+    }
+
+    if (!ugen[0].checked && !ugen[1].checked && !ugen[2].checked) {
+        window.alert("Please select your Gender");
+        return false;
+    }
+    
+    return true;
+}
+</script>
+</body>
+</html>

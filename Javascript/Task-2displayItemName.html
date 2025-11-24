@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        #myTable{
+            background-color: aquamarine;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table id="myTable" border="2px solid black" style="margin:auto; text-align:center; width: 42%; height: 237px">
+        <tr >
+            <td id="Td1" rowspan="2" colspan="2" >
+                <input type="text" name="inp" id="inp" placeholder="Enter text here">
+            </td>
+            
+        </tr>
+            <tr>
+                <td id="Td3" rowspan="2" colspan="2" width: 64px; >
+                    <div id="D1">
+                        <ul id="U1"></ul>
+                    </div>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td id="Td4" rowspan="2" colspan="2">
+                    <button id="B1" type="button" onclick="insertText()">Insert</button>
+                    <button id="B2" type="button" onclick="displayText()">Display</button>
+                </td>
+            </tr>
+        
+    </table>
+    <script>
+        let arr = [];
+        function insertText(){
+            let input_text = document.getElementById("inp").value;
+            arr.push(input_text);
+            document.getElementById("inp").value = "";
+            console.log(arr);
+        }
+        function displayText(){
+            let ul = document.getElementById("U1");
+            ul.innerHTML = "";
+            for(let i=0; i<arr.length; i++){
+                let li = document.createElement("li");
+                let deleteBtn = document.createElement("button");
+                deleteBtn.innerText = "Delete";
+                deleteBtn.onclick = function() {
+                    arr.splice(i, 1); 
+                    displayText(); 
+                };
+                
+                li.innerText = arr[i];
+                li.appendChild(deleteBtn);
+                ul.appendChild(li);
+                
+            }
+        }
+    </script>
+</body>
+</html>

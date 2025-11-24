@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let city=["Mumbai", "Pune", "Nagpur", "Satara"];
+        console.log(city);
+        console.log(city.length); //it return array length
+        console.log(city.length-1); //it return array size
+        console.log(city[2]); //accessing array data
+        city[2]="Nagpur";
+        console.log(city);
+
+        //push(): it will insert values at last index of an array
+        city.push("Kolhapur","Baramati");
+        console.log(city);
+        //pop(): it will remove values from last index of an array
+        city.pop();
+        console.log(city);
+        //unshift(): it will insert values at starting index of an array
+        city.unshift("Jalgaon","Bhusawal");
+        console.log(city);
+        //shift(): it will remove values from starting index of an array
+        city.shift();
+        console.log(city);
+
+        //splice(startIndex, deleteCount, valuesToInsert): it allows us to insert and remove 
+        // values from middle index of an array
+                    
+        city.splice(2, 0, "Chandrapur", "Thane");  
+        console.log(city);
+
+        city.splice(3,2)
+        console.log(city);
+        city.splice(2,3,"Palghar","Badlapur");
+         console.log(city);
+
+         //toString(): convert array data into string, but it take one parameter to seperate string value.
+         console.log(city.join());
+          console.log(city.join("*"));
+          console.log(city.join(" "));
+
+          //how to iterate array values by using for loop
+          
+          for(let i=0;i<city.length;i++){
+            document.write(city[i]+",");
+          }
+          document.write("<br>");
+          //for in: it is used to display array index
+            for (let c in city){
+                document.write(c+",");
+            }
+
+         // concat: it is used to merge two or more Array. it will return new array.
+         let boys=['Ram','Sham','Gopal'], girls=['Sita','gita','radha']
+         let students=boys.concat(girls);
+
+              
+    </script>
+</body>
+</html>

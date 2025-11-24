@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body>
+    <script>
+    let employee = [
+    {id:1,name:'Arsalan',post:"jr developer",salary:40000,gender:"Male",age:24,state:"Maharashtra",bloodgrp:"B+"},
+    {id:2,name:'safwan',post:"jr tester",salary:35000,gender:"Male",age:23,state:"Maharashtra",bloodgrp:"A+"},
+    {id:3,name:'Junaid',post:"sr developer",salary:45000,gender:"Male",age:28,state:"Maharashtra",bloodgrp:"AB+"},
+    {id:5,name:'Pratik',post:"Sales manager",salary:32000,gender:"Male",age:27,state:"Maharashtra",bloodgrp:"O+"}, 
+    {id:6,name:'Riya',post:" Marketing",salary:20000,gender:"Female",age:25,state:"Maharashtra",bloodgrp:"AB+"}, 
+    {id:7,name:'Shubham',post:"Hr",salary:27000,gender:"Male",age:25,state:"Maharashtra",bloodgrp:"B-"}, 
+    {id:8,name:'Asif',post:" Digital marketing",salary:25000,gender:"Male",age:24,state:"Maharashtra",bloodgrp:"B+"},
+    {id:9,name:'Aish',post:"Lead Engineer",salary:50000,gender:"Female",age:30,state:"Maharashtra",bloodgrp:"AB-"},
+    {id:10,name:'Aabhas',post:"jr developer",salary:42000,gender:"Male",age:24,state:"Maharashtra",bloodgrp:"B+"}  
+   
+
+];
+for(let emp of employee){
+document.write(`ID:${emp.id}, Name:${emp.name}, Post:${emp.post},Salary:${emp.salary}, Gender:${emp.gender}, Age:${emp.age},State:${emp.state},Bloodgroup:${emp.bloodgrp} <br>`);
+}
+
+
+//Q1 Employee whose gender is female:
+
+     let filter_g=employee.filter((val,index)=>{
+        return val.gender=="Female";
+     })
+    
+    //Q2 Employee whose salary>30000 and salary<70000 
+      let filter_sal = employee.filter((val,index)=>{
+            return val.salary > 30000 && val.salary < 70000;   
+        })
+
+
+    //Q2 Employee whose position is HR 
+        let filter_post = employee.filter((val,index)=>{
+            return val.post == "HR";   
+        })
+
+
+    //Q3 Employee whose  age>50 
+        let filter_age = employee.filter((val,index)=>{
+            return val.age > 50;   
+        })
+
+
+    //Q4 Employee whose bloodgrp is A+
+        let filter_blood = employee.filter((val,index)=>{
+            return val.bloodgrp == "A+";   
+        })
+
+     document.write("<hr>");
+     for(i of filter_g){
+            document.write(`ID:${i.id} Name:${i.name} Age:${i.age} Post:${i.post} Blood Group:${i.bloodgrp} Salary:${i.salary} State:${i.state} Gender:${i.gender}<br>`);
+        }
+        document.write("<hr>");
+
+        for(i of filter_sal){
+            document.write(`ID:${i.id} Name:${i.name} Age:${i.age} Post:${i.post} Blood Group:${i.bloodgrp} Salary:${i.salary} State:${i.state} Gender:${i.gender}<br>`);
+        }
+        document.write("<hr>");
+
+        for(i of filter_post){
+            document.write(`ID:${i.id} Name:${i.name} Age:${i.age} Post:${i.post} Blood Group:${i.bloodgrp} Salary:${i.salary} State:${i.state} Gender:${i.gender}<br>`);
+        }
+        document.write("<hr>");
+
+        for(i of filter_age){
+            document.write(`ID:${i.id} Name:${i.name} Age:${i.age} Post:${i.post} Blood Group:${i.bloodgrp} Salary:${i.salary} State:${i.state} Gender:${i.gender}<br>`);
+        }
+        document.write("<hr>");
+
+        for(i of filter_blood){
+            document.write(`ID:${i.id} Name:${i.name} Age:${i.age} Post:${i.post} Blood Group:${i.bloodgrp} Salary:${i.salary} State:${i.state} Gender:${i.gender}<br>`);
+        }
+        document.write("<hr>");
+
+        
+
+    </script>
+</body>
+</html>
+T

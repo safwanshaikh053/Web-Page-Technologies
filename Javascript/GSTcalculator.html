@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+    font-family: cursive;
+    background: rgb(197, 197, 230);
+    /* to center a div.  */
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator{
+    background: rgb(156, 156, 166);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, black);
+    width: 350px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(62, 62, 74);
+}
+label{
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+input{
+    /* width: 100%; */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1 solid rgb(62, 62, 74);
+    font-size: 16px;
+}
+button{
+    /* width: 100%; */
+    padding: 12px;
+    background: rgb(62, 62, 74);;
+    border-radius: 8px;
+    font-size: 16px;
+
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgb(128, 128, 137);
+  border-radius: 10px;
+  border: 1px solid rgb(64, 64, 66);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, black);
+}
+
+.result p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: rgb(24, 24, 26);
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <h2>GST Calculator</h2>
+        <label for="amount">Amount (Without GST):</label>
+        <input type="number" id ="amount" placeholder="Enter Amount">
+
+        <label for="gst">GST %:</label>
+        <input type="number" id="gst" placeholder="Enter GST %"><br>
+
+        <button type="button" id="calcBtn" onclick="calculateGST()">Calculate</button>
+
+        <div class="result" id="result">
+            <p>CGST :RS. 0</p>
+            <p>SGST :RS. 0</p>
+            <p>Total with GST :RS. 0</p>
+
+        </div>
+
+    </div>
+
+
+
+   <script>
+    function calculateGST() {
+  let amount = parseFloat(document.getElementById("amount").value);
+  let gstRate = parseFloat(document.getElementById("gst").value);
+
+  if ( amount <= 0 || gstRate <= 0) {
+    alert("Please enter valid amount and GST rate!");
+   return ;
+  }
+
+  let gstAmount = (amount * gstRate) / 100;
+  let cgst = gstAmount / 2;
+  let sgst = gstAmount / 2;
+  let total = amount + gstAmount;
+
+  document.getElementById("result").innerHTML = `
+    <p>CGST: RS.${cgst}</p>
+    <p>SGST: RS.${sgst}</p>
+    <p><b>Total with GST: RS.${total}</b></p>
+  `;
+}
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Task 4</title>
+
+</head>
+<body>
+    
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+<div id="d4"></div>
+<div id="d5"></div>
+<div id="d6"></div>
+<div id="d7"></div>
+<div id="d8"></div>
+<div id="d9"></div>
+<div id="d10"></div>
+<div id="d11"></div>
+<div id="d12"></div>
+
+
+
+<script>
+    let day=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    let month=['January', 'February', 'March', 'April', 'May', 'June', 'July',
+     'August','September', 'October','November','December'];
+    let dateObj=new Date();
+    document.getElementById("d1").innerHTML=dateObj;
+    document.getElementById("d2").innerHTML=dateObj.getDate();
+    document.getElementById("d3").innerHTML=dateObj.getFullYear();
+    document.getElementById("d4").innerHTML=dateObj.getHours();
+    let today = document.getElementById("d5").innerHTML=dateObj.getDay();
+   let thisMonth= document.getElementById("d6").innerHTML=dateObj.getMonth();
+
+    document.write(day[today],"<br>");
+    
+     document.write(month[thisMonth]);
+
+// function myClock(){
+//     let d=new Date();
+//     document.getElementById("d7").innerHTML=d.toLocaleTimeString();
+// }
+// setInterval(myClock,1000);
+
+
+
+</script>
+</body>
+</html>

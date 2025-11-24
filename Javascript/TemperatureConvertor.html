@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+                                    
+        .container {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px 0;
+            background: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .result {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        #dF {
+            display: inline;
+            color: #d63384;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="">Enter Temperature in degree Celicus :</label><br>
+        <input type="text" name="dC" id="dC" placeholder="Enter Temperature in degree Celicus"><br>
+        <button type="button" onclick="convert()">CONVERT</button>
+        <div >Temperature in degree Faranhite : <p id="dF"> </p></div>
+    </div>
+    <script>
+        function convert() {
+        let dc = parseInt(document.getElementById("dC").value) ;
+        let df = (dc * 1.8) + 32;
+        document.getElementById("dF").innerHTML=df;
+        }
+        
+    </script>
+</body>
+</html>

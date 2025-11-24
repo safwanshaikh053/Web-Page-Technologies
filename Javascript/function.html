@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //default function
+        function greeting(){
+            return 'Good Afternoon u all';
+        }
+        console.log(greeting());
+        //paramerized function
+        function addition(num1,num2){
+            return num1+num2;
+        }
+        console.log(addition(20,70));
+        //Anonymous function: A function with no name is called Anonymouos function
+        let sub =function (num1,num2){
+                return num1-num2;
+        }
+        console.log("Substraction :",sub(20,70));
+        //Arrow function: A function with no name no function keyword is called Arrow function
+        let mul=(num1,num2)=>{
+            return num1*num2;
+        }
+        console.log("Multiplication :",mul(20,70));
+        //optional parameterized function : in this no need to pass parameter value, optional parameter always write at last
+        let fullname=(fname,lname,mname="")=>{
+            return fname+mname+lname;
+        }
+        console.log(fullname("Full Name :",'Safwan','Shaikh'))
+        console.log(fullname('Safwan','Mohammed','Shaikh'))//if you want give optional like middle name here then u can , if u don't then there will be no error
+        //rest parameterize  function: when we dont know how many parameter are required , in that case we use. here we use spread(...) operator
+        let stdList=(...std)=>{
+            return std;
+        }
+        console.log(stdList("Ram","Manish","Aabhas","Swapnil","Junaid"))
+    </script>
+</body>
+</html>

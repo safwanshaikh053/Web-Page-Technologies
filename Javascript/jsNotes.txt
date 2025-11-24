@@ -1,0 +1,186 @@
+24/9/
+
+
+Javascript:
+-it is use to add functionality and action into web application.
+-Javascript is interpreted language.
+-Javascript is loosly typed language. 
+
+*Why js is called as loosly types language.
+-when we create a variable in Javascript we can not deternine what type of data is going to be store in variable untill we initialize it.
+-we can store multiple type of data into same variable.
+
+*Types of Javascript.
+*how to use js 
+there are two ways to use js 
+1.internal Javascript: in html file we use script and in that we write js code.
+2.external Javascript: in this we create a seperate fileName.js file and that import in html file by using script tag head part.
+
+*how to get or disply output in Javascript
+1. document.write(): it will display output on webpage. it will display output in same line.
+2. window.alert(): it will generate model popup window and to display output.
+3. console.log(): it will display output in browser console.(use for testing)
+4. innerHTML (DOM): it will display output inside an element.
+
+*what is variable in js 
+-variable is container where  we store data information for temprary purpose.
+-data store in variable can be change later 
+-in Javascript we can create variable by using var,let and const keyword.
+
+//  variable in javascript 
+     let variableName;  // declration of variable 
+          variableName = value; // initialization 
+
+     let variableName1 =  value;   // definig a variable   
+IMP
+Q.What is Hoisting in js 
+-it is default javascript behaviour which moves variable declration at top.
+
+Q. what is difference between let,var and const 
+var:
+-it create a function scope variable.
+-we can redeclare variable 
+-we can use variable first and then declare it.
+
+let :
+-it create block scope variable 
+-it prevent re-declration of variable.
+-we can not use variable before declration of it.
+
+const:
+-it create block scope constant variable.
+-when we create constant variable at same time we have to initialize it.
+-constant variable value can not be while run time.
+
+Q. what is difference between == and === 
+== : it will check only data or values if both are same then returm true.
+ex: 8==8 true
+ex: 8=='8' true 
+
+=== :it will check values as well its its data type if are same then it return true result.
+Ex: 8===8  true
+Ex: 8==='8' false
+
+
+*function in javascript
+-function id block of of code which we use to perform perticular task.
+-function will execute only when we call.
+-function can re-use mltiple time.
+
+*default function
+*parameterize function
+*anonymous function
+*arrow function 
+*optional parameterize function 
+*rest parameterize functionality
+
+*how set, get value from element by using DOM 
+*how to set style rule for element by using js 
+
+*how to get data from inpt control 
+
+*Array:
+-it is use to store multiple with same data type.
+-in array data store on index basis.
+-array index always start from zero index.
+-we can access array values outside array by writting arrayName[index].
+
+-array length: total number of values available in array 
+array.length
+
+-array size: total number for index 
+array.length-1;
+
+
+=====================================
+25/9/25 
+
+-i explain set cell bg color task 
+-concate method for array 
+-use spread for merging array 
+
+*Object Data type:
+-it store multiple with dirrent data type.
+-it store data in key and value paire formate.
+-we can access object data outside by writing ObjectName.keyName
+-object data type denoted {}
+
+*array of object data 
+
+*string: 
+-it is collection of characters.
+-instring each characters has index,
+-string index start from 0 index.
+-string written in '' or "" 
+
+*3 string method return index number of searching string.
+1.indexOf(searchingString,startIndex):
+-it return  index of first occurences of searching string.
+-it search seach string from left to right.
+-if searching string do not found it return -1 as result.
+
+2.lastIndexOf(searchingString,startIndex):
+-it return  index of first occurences of searching string.
+-it search seach string from right to rileft.
+-if searching string do not found it return -1 as result.
+
+3.search(searchingString):
+-it return  index of first occurences of searching string.
+-it search seach string from left to right.
+-if searching string do not found it return -1 as result.
+-it is fater then indexOf method.
+
+*3 method which return partial part of searching string 
+4.slice(startIndex,endIndex):
+-it will return part of string from big string 
+-if we pass +ve index then it search string from left to right
+-if we pass -ve index then it search string from right to left.
+
+5.substring(startIndex,endIndex):
+-it will return part of string from big string 
+-if we pass +ve index then it search string from left to right
+
+6.subStr(startIndex,totalNumberOfCharacter):
+-it will return part of string from big string 
+-it search string from left to right.
+
+split():convert string data into an array 
+
+*Date and its method 
+-if you want to get date and time in javascript for it first you have to create object of Date class 
+-in javascript date class object return date and time from browser.
+
+syntax:   let ObjDate = new Date();
+
+sun =0,mon=1......sat=6;
+jan=0...........Dec=11; 
+
+*form validation 
+
+*learn onsubmit event 
+*learn onblur event 
+
+Note: javascript execute asynchronously by default 
+
+*Call back function :
+-passing an function name as argument inside another function is called callback function.
+
+1995 js introduces 
+
+2009 ES5 ECMA5
+
+2015 ES6 ECMA6 
+
+* de structure-
+OOP 
+1.inheritence: -
+2.encapsulation
+3.Abstraction
+4.Polymorphism
+
+
+
+
+
+
+

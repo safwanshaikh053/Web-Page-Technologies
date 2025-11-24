@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(179, 179, 136);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #calculator {
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        input[type="date"] {
+            padding: 8px;
+            margin: 10px 0;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            background: rgb(248, 248, 187);
+            border: none;
+            color: rgb(31, 30, 30);
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        #res {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-left: 5px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="calculator">
+    <label for="age_inp">Enter your Birth date</label>
+    <input type="date" name="age_inp" id="age_inp"><br>
+    <button type="button" onclick="getAge()">Current age</button><br>
+
+    <label for="result">Result :</label>
+    <span id="res"></span><br>
+
+    <!-- <input type="text" name="res" id="res"><br> -->
+    </div>
+    <script>
+        function getAge(){
+        let age = new Date(document.getElementById("age_inp").value);
+        let today = new Date() ;
+        let ageDif;
+        console.log(age);
+        console.log(today);
+        ageDif = today.getFullYear() - age.getFullYear() ;
+        ageDif = ageDif + " Years";
+        if (parseInt(ageDif) == 0){
+            ageDif = today.getMonth() - age.getMonth();
+            ageDif = ageDif + " Months";
+        }
+        console.log(ageDif);
+        
+        document.getElementById("res").innerHTML = ageDif;
+    }
+    </script>
+</body>
+</html>

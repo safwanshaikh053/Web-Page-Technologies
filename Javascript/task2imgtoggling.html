@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+<img id="togglingImg" src="../HTML/assets/hulk2.jpg" alt="image" height="350px" width="500px" style="margin: 20px; border-radius: 2%;">
+    <h3 id="imgname">LAKESIDE VIEW</h3>
+    <button id="imgtoggler" type="button" onclick="toggleImage()">Toggle image</button>
+    <br><hr> 
+    <script> 
+        let btclick = true;                                                                                                              in script:                                                                                                                      let btnclick = true;
+        function toggleImage(){
+            if (btclick) {
+                document.getElementById("togglingImg").src = "../HTML/assets/Hulk2.jpg";
+                document.getElementById("imgname").innerHTML = "HULK";
+                btclick = false;
+            } else {
+                document.getElementById("togglingImg").src = "../HTML/assets/Hulk1.jpg";
+                document.getElementById("imgname").innerHTML = "HULK";
+                btclick = true;
+            }
+        }
+</script> 
+</body>
+</html>

@@ -1,0 +1,49 @@
+task1==><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1</title>
+  </head>
+  <body>
+    <script>
+    const employee = [ 
+    {id:1,name:'Arsalan',post:"jrdeveloper",salary:40000,gender:"Male",age:24,state:"Maharashtra",bloodgrp:"B+"},
+    {id:2,name:'Safwan',post:"jrtester",salary:35000,gender:"Male",age:23,state:"Maharashtra",bloodgrp:"A+"},
+    {id:3,name:'Junaid',post:"srdeveloper",salary:45000,gender:"Male",age:28,state:"Maharashtra",bloodgrp:"AB+"},
+    {id:5,name:'Pratik',post:"Salesmanager",salary:32000,gender:"Male",age:27,state:"Maharashtra",bloodgrp:"O+"},
+    {id:6,name:'Riya',post:"Marketing",salary:20000,gender:"Female",age:25,state:"Maharashtra",bloodgrp:"AB+"},
+    {id:7,name:'Shubham',post:"Hr",salary:27000,gender:"Male",age:25,state:"Maharashtra",bloodgrp:"B-"},
+    {id:8,name:'Asif',post:" Digitalmarketing",salary:25000,gender:"Male",age:24,state:"Maharashtra",bloodgrp:"B+"},
+    {id:9,name:'Aish',post:"LeadEngineer",salary:50000,gender:"Female",age:30,state:"Maharashtra",bloodgrp:"AB-"},
+    {id:10,name:'Aabhas',post:"jrdeveloper",salary:42000,gender:"Male",age:24,state:"Maharashtra",bloodgrp:"B+"}
+    ];
+    
+function showData(){
+    const table = document.createElement('table');
+    table.setAttribute('border', '1');
+         const tRow = document.createElement('tr');
+            Object.keys(employee[0]).forEach(key => {
+                const th = document.createElement('th');
+                th.appendChild(document.createTextNode(key));
+                tRow.appendChild(th);
+            });
+            table.appendChild(tRow);
+
+            employee.forEach(item => {
+                const row = document.createElement('tr');
+                Object.values(item).forEach(value => {
+                    const td = document.createElement('td');
+                    td.appendChild(document.createTextNode(value));
+                    row.appendChild(td);
+                });
+                table.appendChild(row);
+            });
+
+            document.body.appendChild(table);
+        }
+        showData();
+
+</script>
+  </body>
+</html>

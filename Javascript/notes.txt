@@ -1,0 +1,129 @@
+    
+    
+     ================Javascript====================
+
+     -it is used to add functionality and action into web application.
+     -javascript is interpreted language.
+     -javascript is loosely typed language.
+
+
+    **why javascript is called loosely typed language?
+          -> when we create a variable in javascript we cannot determine what type
+               of data is going to store in variable untill we initialize it.
+
+
+    there are 2 ways to use javascript:
+        1. Internal javascript: in html file we use script and in that we write js code.
+        2. External javascript: in this seperate file name--import in html file by using script head port.
+
+    to display output in javascript:
+        1.document.write():  displays output on web Page.
+                            it will display output in only one line.
+        2.window.alert(): generates model pop-up window to display output.
+                          highest priority.
+        3.console.log(): displays output in browser console.(generally used for testing)
+        4.innerHTML(): displays output inside an element.
+
+
+        variables in javascript
+          -variable is a container where we store data for temporary purpose.
+          -data stored in variable can be changed later.
+          -in js we can create variable by using var, let and const keyword.
+
+             let variableName;//syntax variable declaration
+             variableName=value; //initialization
+
+
+        **what is Hoisting in js?
+            it is default js behaviour, which moves variable declaration at top.
+            to remove this let keyword is used.
+
+        Difference between let, var and const
+
+            var: create a function scope variable.
+                 we can redeclare a variable.
+                 we can use variable first and then declare it.
+            let: it create blocks of variable.
+                 it prevent redeclaration of variable.
+                 we cannot use variable before declaration of it.
+            const: it create block scope constant variable.
+                    when we create const variable at sime time we have to initialize it.
+                    constant variable value cannot be while Run time.
+
+
+        **what is Hoisting in js?
+            it is default js behaviour, which moves variable declaration at top.
+            to remove this let keyword is used.
+
+        ========== data types in js===========
+                    1.number data tupe
+                        let num1=123,num2=3.21
+
+                    2.String data type
+                        let fname=Safwan, lname=Mohammed
+
+                    3. Boolean data type
+                         let cond1= true, cond2=false;
+
+                    4.Undefined data type
+                        let info;
+
+                    5.Null data type
+                         let data1=null;
+
+Non Primitive data type or user defined data type
+                    6.Array data type
+                        let fruits=["Apple","Mango","Grapes"];
+                    7.Object data type
+                        let emp={id:101,name:"Abhas",post:"Manager"};
+
+What is Difference between == and ===
+    ==: it will check if the both data are same then return true.
+    ===: it will check if the data and data type are the same then return true.
+
+
+VERY IMP
+    =================Functions in Javascript==================
+        function is a bliock of code which we use to perform particular task.
+        it will only execute when it is called.
+        it can be use multiple times.
+
+
+        //default function
+        function greeting(){
+            return 'Good Afternoon u all';
+        }
+        console.log(greeting());
+        //paramerized function
+        function addition(num1,num2){
+            return num1+num2;
+        }
+        console.log(addition(20,70));
+        //Anonymous function: A function with no name is called Anonymouos function
+        let sub =function (num1,num2){
+                return num1-num2;
+        }
+        console.log("Substraction :",sub(20,70));
+        //Arrow function: A function with no name no function keyword is called Arrow function
+        let mul=(num1,num2)=>{
+            return num1*num2;
+        }
+        console.log("Multiplication :",mul(20,70));
+        //optional parameterized function : in this no need to pass parameter value, optional parameter always write at last
+        let fullname=(fname,lname,mname="")=>{
+            return fname+mname+lname;
+        }
+        console.log(fullname("Full Name :",'Safwan','Shaikh'))
+        console.log(fullname('Safwan','Mohammed','Shaikh'))//if you want give optional like middle name here then u can , if u don't then there will be no error
+        //rest parameterize  function: when we dont know how many parameter are required , in that case we use. here we use spread(...) operator
+        let stdList=(...std)=>{
+            return std;
+        }
+        console.log(stdList("Ram","Manish","Aabhas","Swapnil","Junaid"))
+
+ 
+ How to set, get value from element by using DOM 
+   
+
+   **ARRAY 
+   
