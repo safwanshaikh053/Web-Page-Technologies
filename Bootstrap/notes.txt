@@ -1,0 +1,34 @@
+*Bootstrap
+  it is html,css, javascript framework.
+  it provide built-in css classes.
+  it makes web application attractive, responsive and mobile friendly.
+  latest version of bootstrap is bootstrap 5.
+  it is open source.
+
+Responsive Web application:
+  Web application which adjust its content and layout automatically according to the different screen width.
+      2 ways to use bootstrap
+         1. using CDN link.
+         2. By downloading it.
+        
+
+class container:
+    -it will apply 15px margin from left and right element.
+
+color classes:
+    -
+
+
+    Bootstrap Grid:
+    it is used to manage to layout of web application according to different screen width.
+    in bootstrap we use two classes rows and columns.
+    in bootstrap grip row we create column with 12 size only, if its size exceeded then new column will start on new row.
+
+
+    screen width >= 1200px then xl
+    screen width >= 992px then lg
+    screen width >= 768px then md
+    screen width >= 576px then sm
+
+    
+
