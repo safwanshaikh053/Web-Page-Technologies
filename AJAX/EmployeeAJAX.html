@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   
+    <title>Document</title>
+</head>
+<body>
+        <div class="container mt-3 mb-2 bg-info">
+      <button type="button" onclick="getData()" class="btn btn-warning mt-2">get data</button>
+     <table class="table table-hover table-bordered table-striped">
+     <thead>
+        <tr class="table-primary">
+            <th>Id</th><th>Name</th><th>Post</th><th>Salary</th><th>Address</th><th>Company</th><th>Delete</th>
+        </tr>
+     </thead>
+     <tbody id="d1">
+
+     </tbody>
+
+     </table>
+     <script src="./EmployeeAJAX.js"></script>
+</body>
+</html>
