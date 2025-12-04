@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" id="btn1">Hide</button>&nbsp;&nbsp;
+    <button type="button" id="btn2">Show</button>&nbsp;&nbsp;
+    <button type="button" id="btn3">Toggle</button>&nbsp;&nbsp;
+    <br><br>
+    <img src="../HTML/assets/ironman3.jpg" alt="" id="btn" height="300px" width="500px">
+
+
+    <br><br>
+
+    <button type="button" id="btnHide">SlideUP</button>&nbsp;&nbsp;
+    <button type="button" id="btnShow">SlideDown</button>&nbsp;&nbsp;
+    <button type="button" id="btnToggle">SlideToggle</button>&nbsp;&nbsp;
+    <br><br>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta quas nobis labore porro
+        dignissimos necessitatibus reprehenderit officia aut, ratione nam animi voluptatum rem comm\
+        odi at repudiandae voluptatibus unde eius nostrum provident, similique quisquam. Cumque quae
+        asperiores necessitatibus consequatur consectetur sunt, exercitationem quia fugit optio facere
+        dolor impedit id fugiat. Repellat a illo ipsam fugiat non repudiandae rerum nam, eni
+        m incidunt n eque! Repudiandae quos nobis ipsam ex iste. Temporibus non totam minus sunt ipsa
+        nam voluptatum porro tenetur sequi neque, fugit eveniet cum quasi, dicta assumenda earum quas,
+        adipisci ipsam ollitia aspernatur illum. Nobis vero numquam recusandae enim nisi voluptatem.
+    </p>
+    <button type="button" id="fout">FadeOut</button>&nbsp;&nbsp;
+    <button type="button" id="fin">FadeIn</button>&nbsp;&nbsp;
+    
+    <button type="button" id="ftoggle">FadeToggle</button>&nbsp;&nbsp;
+    <br><br>
+    <img src="../HTML/assets/hulk2.jpg" id="img2" height="300px" width="500px">
+
+    <script>
+        $(document).ready(function () {
+            //hide
+            $('#btn1').click(() => {
+                $('#btn').hide(3000, () => window.alert("Hidden"))
+            })
+            //show
+            $('#btn2').click(() => {
+                $('#btn').show(3000, () => window.alert("Displayed"))
+            })
+            //toggle
+            $('#btn3').click(() => {
+                $('#btn').toggle(3000, () => window.alert("Toogled"))
+            })
+        })
+
+
+        $(document).ready(function () {
+            //hide
+            $('#btnHide').click(() => {
+                $('#para').slideUp(3000)
+            })
+            //show
+            $('#btnShow').click(() => {
+                $('#para').slideDown(3000)
+            })
+            //toggle
+            $('#btnToggle').click(() => {
+                $('#para').slideToggle(3000)
+            })
+        })
+
+        $(document).ready(function () {
+            //hide
+            $('#fout').click(() => {
+                $('#img2').fadeOut(3000)
+            })
+            //show
+            $('#fin').click(() => {
+                $('#img2').fadeIn(3000)
+            })
+            //toggle
+            $('#ftoggle').click(() => {
+                $('#img2').fadeToggle(3000)
+            })
+        })
+
+    </script>
+</body>
+
+</html>

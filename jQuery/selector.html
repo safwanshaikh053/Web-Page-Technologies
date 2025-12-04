@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Click on me</h2>
+    <br>
+    <h1 id="d1">Double Click on me</h1>
+
+
+    <script>
+        $(document).ready(function(){
+            $('h2').click(function(){
+                window.alert("hi this is Safwan")
+            })
+            $("#d1").dblclick(function(){
+            $(this).hide()
+            })
+        })
+    </script>
+</body>
+</html>

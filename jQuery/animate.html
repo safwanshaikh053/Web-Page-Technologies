@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btn"> Move Image</button>
+    <br><br>
+    <img src="../HTML/assets/spidermanxgwenstacy.jpg" alt="" id="img1" 300px" width="500px">
+
+
+
+<script>
+    $(document).ready(function(){
+        $('#btn').click(function(){
+            $('#img').animate({"left":'200px','top':'200px',"border-radius":'50%'},3000)
+        })
+    })
+</script>
+</body>
+</html>
