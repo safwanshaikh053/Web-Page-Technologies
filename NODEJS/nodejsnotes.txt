@@ -1,0 +1,72 @@
+**how to enter REPL environment
+    open terminal and write node
+**to come out from REPL environment
+    use ctrl+D
+
+
+**NPM(Node Package Manager)
+    -it is an online repository from where you can install, update and uninstall nodejs modules(packages)
+
+**how to create package.json file
+    npm init
+    npm init -y
+
+
+node-modules: all third-party dependencies install here.
+package.json : it keep entries of all install dependencies.
+package-lock.json: it contain detaildescription of instal dependencies.
+
+**chalk
+    npm install chalk
+    
+**validator
+
+
+**prompt
+    var prompt = require('prompt'); //import 
+
+
+
+
+
+    *REPL(Read-Eval-Print-Loop)
+HOw to enter in repl:open cmd and type node.
+it's uses only 1% of time.
+
+
+======Module in node js======
+Module in nodejs is a simple or complex functionality organized in single or multiple javascript file can be reused
+throughout the nodejs application.
+
+
+module type :
+    core module:
+       - it include bare minimum functionality of nodejs.
+         these modules are complied into its binary distribution and load automatically when
+          nodejs  process start.
+         However,we need to import the core module first in order to use it in your application.
+
+ types:
+    http:to create http server in node js.
+    os:provide info about os.
+    path:to handle file path.
+    url:to parse the url string.
+    fs:to handle file system in computer.
+    querystring:to handle url querystring.
+    util:to access utility function.
+
+How to use it:
+    const variablename=require("modulename")
+    __dirname:it provides current directory path.
+    __filename:it provide current filepath.
+
+
+
+local module:
+    local module Are created locally in nodejs application
+    these module iclude different functionallity of your application in seperate files and folder
+    you can also package it and distribute it via npm so that nodejs community can use it
+third party module
+
+
+**Stream :
