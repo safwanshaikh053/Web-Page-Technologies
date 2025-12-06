@@ -1,0 +1,220 @@
+
+
+
+
+S/W requirement 
+nodejs 
+  node -v 
+npm 
+  npm -v 
+there are multiple three ways to create reacT APP 
+-By npx :no need to install configuration 
+        - npx create-react-app appname
+        - cd appname 
+        - npm start 
+   
+-By npm :we need to install configuration file 
+        - npm install -g create-react-app
+        - create-react-app appname
+        - cd appname 
+        - npm start 
+
+-By vite: it react react project with minimal required file.
+
+
+Q.what is React 
+-it is javascript library.
+-it is use to creare rich UI.
+-it create create single page application(SPA).
+-react create and maintain by meta.
+-latest version of react is react 19
+
+-react works on component basis.
+
+*component: it is partial part of react project, 
+            which contain re-usable code.
+
+*In react there are two types of component.
+-function component:when your main focus is on UI design Only. 
+-class component: when we have write complex logic in that case we use it.
+
+*how to get or display output of component.
+-first we have to import component and then write component name as tag 
+ where you want
+
+*use of vs extension for creating react component  y sing shortcut method
+rfce : create normal react function component
+rafce : create arrow react function component
+rce : create  react class component
+rconst : create constructor with super method and state in class component.
+
+*Coditional Redering of component:
+1. if else: if condition is true then if block will render output other wise else block.
+
+2. element as a variable : on thse basis of condition we store result 
+in variable and display its output.
+
+3. use of ternary operator:here we use short hand syntax of if else.
+   syntax:   (condition) ? truepart : falsepart;
+
+4. use of short-circuit(&&): if condition condition then and only
+                            then it display or render output, 
+                             it is denoted  by && 
+                             -it is use to null checking.
+
+-whenever you create component its fileName must start with capital letter
+
+Task1:create function component with your name and get its output
+PanchashilComp
+Task2:create class component with your friend name and get its output
+AabhasComp
+
+*What is JSX(javascript+XML):
+-it makes react code easy , and allows us to use html code in react component.
+-in jsx we have to always use one parent element to wrap it multiple child element.
+-parent element must be block element like div,p,h1-h1.
+
+*props(property):
+-it is parameter or functional parameter which is use to pass data 
+  inside component.
+-it return object type of data.
+-we can access props in function component by writing props.keyname.
+-we can access props in class component by writing this.props.keyname.
+
+*How to  create method or function inside components
+
+*state :
+-in class component we use state to handle essentail data.
+-we write write state in class component constructor.
+-it return object type of data to us.
+-to access state data inside class we need to write this.state.keyName
+
+*setState():
+-this method is reposible to manipulate state data in class component.
+
+*destructuring of state aand props 
+
+-after react version16 we can use state in function component also by using useState Hoook.
+
+Task1:create function component with your name and pass props as fname,lname,contact,gender,address and display its value with component output.
+
+Task2:create class component with your friend name and pass props as fname,lname,contact,gender,address and display its value with component output.
+
+Task3: create class component with CounterComp having state with property counter with value 0,  display counter value and write logic to increment ,decrement,and reset counter value.
+
+Task4: create component with name ToggleImageComp and toggle image on single button click 
+
+Task: create component with name ChangeImgComp and change Multiple image with name when click on Multiple button
+
+
+*how to use css in React 
+there are three ways to use css in react 
+1.enternal css :
+2.external css :
+3.Module css: when we have css for perticular component.
+to create its file we have use filename.module.css ,
+
+MyCssComp fc 
+
+src folder 
+  shared folder 
+     images folder 
+     constant folder 
+
+*component Interaction : accessing data from one component to another , foir this in between component they must have parent child relation.
+
+-we pass state data as props to child component
+
+*PureComponent: it prevent un-necessary re-rendering of class component by performing shallow comparision. to achive this we have to extends class component with PureComponent class.
+-this is use to achive performace optimizession.
+
+*how to use bootstrap in react 
+step1:install  
+npm i bootstrap
+step2: go to index.js file and import bootstrap path
+
+*Virtual DOM:
+-in react instead of manipulating browser dom directly react create Virtual dom in its memory where it does all the necessary changes before browser DOM. Virtual DOM changes what needs to be change. thats why react is faster.
+ ==========================================
+ 1-1-2
+*HOC(Heigher Order Component):
+-it is use to share same bussiness logic with multiple component.
+-by using hoc we pass data from function component to class or other function. 
+-to implement HOC concept we have use function component.
+
+MyHocComp.js fs 
+
+*ClickCounterComp  cc state => count:0   button= onclick
+*HoverCounterComp  cc state => count:0   event onMouseHover
+
+*ErrorBoundary:
+-it is react component which is use to handle error which occure while component render.
+-it only handles error which occurs at render time only and functional or logical error.
+-to implement this we use two class component life cycle method.
+-for implementation of ErrorBoundary we have to use only class component
+
+1.getDerivedStateFromError: it execute automatically when occure while component render
+2.componentDidCatch: it provide error log (information) which occure.
+
+*Routing In React:
+-navigation of component.
+-to perform routing in react we have to use external library with react-router-dm 
+-in routing we display component view or outpt by writting its routing name path name in browser url.
+
+-in this we use CreateBrowserRouter methode to create routing path for component
+
+-how to install react-router-dom
+npm i react-router-dom 
+
+   src folder 
+       mainRouting folder 
+         routing.js file 
+       layout folder 
+            MainDashboardComp (fc)
+            NavComp (fc)
+            PageNotFoundComp (fc)
+            ReactHooksComp (fc)
+            UseStateHookComp (fc)
+            UseEffectHookComp (fc)
+
+1. default routing : display component view if path value is blank.
+2.naming Routing : display component view if Routing path name is written in browser rul.
+3.parameterize routing:display component view if Routing path name with parameter is written in browser rul. 
+4.child Routing : display one routing inside another routing, to achive this we use childer property and pass array of object values to it.
+-to display child routing output we have to import <Outlet/> librrary in parent routing component render method as tag.
+
+5.whild-card: if user enter wrong path name in browser url thn it redirect wild-card routing component.
+-wild-card routing always write at last, it bellow routing will never work.
+
+*CRUD 
+-to make request from react project to server for it we use axios library
+-to use it first we need to install axios in react project 
+npm i axios 
+
+*useState hook : it allows us to use state in function component.
+-it return two values 1. currentState,2.method to currentState
+-to use it first we have to import it from react library.
+
+*useEffect() hook:
+it execute only after function component render.
+-it takes two parameter 1. callback function, dependency 
+syntax  useEffect(()=>{},dependency) 
+
+case1: no dependency value pass , it execute everytime when component render.
+       useEffect(()=>{}) 
+
+case2:  dependency value pass as blank array ,it execute only once when component render.
+       useEffect(()=>{},[]) 
+
+case3: dependency value pass in array ,it execute once when component render. and execute when state or property value change.
+useEffect(()=>{},[state/props]);
+
+React: it is use to create rich UI 
+
+
+Redux:
+-it is js library.
+-it is use to store,manage,and tract state for javascript application.
+or 
+redux is predictable state container for javascript application. 
+

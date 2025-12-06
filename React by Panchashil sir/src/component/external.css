@@ -1,0 +1,13 @@
+
+.txt-danger{
+    color: red;
+    font-size: 20px;
+    background-color: lightgray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.txt-success{
+    color: rgb(62, 14, 222);
+    font-size: 27px;
+    background-color: rgb(236, 226, 29);
+    font-family:'Times New Roman', Times, serif
+}
